@@ -1,0 +1,24 @@
+{
+  "name": "travlr-mean-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VernButler11/travlr-mean-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/VernButler11/travlr-mean-app/issues"
+  },
+  "homepage": "https://github.com/VernButler11/travlr-mean-app#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
