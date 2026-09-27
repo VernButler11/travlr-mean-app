@@ -1,0 +1,23 @@
+[
+    {
+        "code": "HAW01",
+        "name": "Hawaii Adventure",
+        "length": "7 nights",
+        "price": 1899,
+        "description": "Explore beaches, volcanoes, and tropical forests."
+    },
+    {
+        "code": "ALSK02",
+        "name": "Alaskan Cruise",
+        "length": "5 nights",
+        "price": 1299,
+        "description": "Experience glaciers, wildlife, and scenic fjords."
+    },
+    {
+        "code": "EURO03",
+        "name": "European Explorer",
+        "length": "10 nights",
+        "price": 2499,
+        "description": "Visit iconic cities across Europe."
+    }
+]
