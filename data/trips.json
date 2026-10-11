@@ -1,23 +1,33 @@
 [
-    {
-        "code": "HAW01",
-        "name": "Hawaii Adventure",
-        "length": "7 nights",
-        "price": 1899,
-        "description": "Explore beaches, volcanoes, and tropical forests."
-    },
-    {
-        "code": "ALSK02",
-        "name": "Alaskan Cruise",
-        "length": "5 nights",
-        "price": 1299,
-        "description": "Experience glaciers, wildlife, and scenic fjords."
-    },
-    {
-        "code": "EURO03",
-        "name": "European Explorer",
-        "length": "10 nights",
-        "price": 2499,
-        "description": "Visit iconic cities across Europe."
-    }
+  {
+    "code": "HAW01",
+    "name": "Hawaii Adventure",
+    "length": "7 nights",
+    "start": "2026-12-01T00:00:00.000Z",
+    "resort": "Maui Beach Resort",
+    "perPerson": 1899,
+    "image": "hawaii-adventure.jpg",
+    "description": "Explore beaches, volcanoes, and tropical forests."
+  },
+  {
+    "code": "ALSK02",
+    "name": "Alaskan Cruise",
+    "length": "5 nights",
+    "start": "2026-06-15T00:00:00.000Z",
+    "resort": "Glacier Bay Cruise Line",
+    "perPerson": 1299,
+    "image": "alaskan-cruise.jpg",
+    "description": "Experience glaciers, wildlife, and scenic fjords."
+  },
+  {
+    "code": "EURO03",
+    "name": "European Explorer",
+    "length": "10 nights",
+    "start": "2026-09-10T00:00:00.000Z",
+    "resort": "EuroStar Travel Group",
+    "perPerson": 2499,
+    "image": "european-explorer.jpg",
+    "description": "Visit iconic cities across Europe."
+  }
 ]
+

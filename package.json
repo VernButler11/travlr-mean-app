@@ -20,7 +20,8 @@
   },
   "homepage": "https://github.com/VernButler11/travlr-mean-app#readme",
   "dependencies": {
-    "express": "^5.2.1",
-    "hbs": "^4.3.1"
+    "express": "^4.22.3",
+    "hbs": "^4.3.1",
+    "mongoose": "^9.10.4"
   }
 }
