@@ -1,0 +1,8 @@
+<h2>Available Trips</h2>
+
+<div *ngFor="let trip of trips" class="trip-card">
+  <h3>{{ trip.name }}</h3>
+  <p>{{ trip.length }}</p>
+  <p>{{ trip.resort }}</p>
+  <p>${{ trip.perPerson }}</p>
+</div>

@@ -1,41 +1,28 @@
-﻿require('./app_server/models/db');
+﻿require('./app_api/models/db');
 const express = require('express');
 const path = require('path');
-const hbs = require('hbs');
+const cors = require('cors');
 
-// Server-side routes
-const indexRouter = require('./app_server/routes/index');
-const tripsRouter = require('./app_server/routes/trips');
-const roomsRouter = require('./app_server/routes/rooms');
-const mealsRouter = require('./app_server/routes/meals');
-const aboutRouter = require('./app_server/routes/about');
-const contactRouter = require('./app_server/routes/contact');
-
-// API routes (must export a router!)
+// API routes
 const apiRouter = require('./app_api/routes/index');
 
 const app = express();
 
-// View engine setup
-app.set('views', path.join(__dirname, 'app_server', 'views'));
-app.set('view engine', 'hbs');
+// Allow the Angular admin app to call the API
+app.use(cors({ origin: 'http://localhost:4200' }));
+
+// JSON body parser
+app.use(express.json());
 
 // Static files
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Mount server-side routes
-app.use('/', indexRouter);
-app.use('/trips', tripsRouter);
-app.use('/rooms', roomsRouter);
-app.use('/meals', mealsRouter);
-app.use('/about', aboutRouter);
-app.use('/contact', contactRouter);
-
 // Mount API routes
 app.use('/api', apiRouter);
 
-app.listen(3000, () => {
-    console.log('Server running on port 3000');
+// Start backend on IPv4
+app.listen(3000, '127.0.0.1', () => {
+    console.log('API server running on http://127.0.0.1:3000');
 });
 
 module.exports = app;

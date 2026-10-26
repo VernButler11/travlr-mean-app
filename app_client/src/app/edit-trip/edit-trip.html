@@ -1,0 +1,7 @@
+<form (ngSubmit)="save()">
+  <input [(ngModel)]="trip.name" name="name" class="form-control" placeholder="Name">
+  <input [(ngModel)]="trip.price" name="price" class="form-control" placeholder="Price">
+  <textarea [(ngModel)]="trip.description" name="description" class="form-control" placeholder="Description"></textarea>
+
+  <button class="btn btn-success mt-3">Save</button>
+</form>

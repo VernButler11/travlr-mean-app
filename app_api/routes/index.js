@@ -1,11 +1,16 @@
 const express = require('express');
 const router = express.Router();
-const apiController = require('../controllers/index');
+const tripsController = require('../controllers/trips');
 
-// GET all trips
-router.get('/trips', apiController.tripsList);
+router
+    .route('/trips')
+    .get(tripsController.tripsList)
+    .post(tripsController.tripsCreate);
 
-// GET one trip by tripCode
-router.get('/trips/:tripCode', apiController.tripsFindByCode);
+router
+    .route('/trips/:tripCode')
+    .get(tripsController.tripsFindByCode)
+    .put(tripsController.tripsUpdateOne)
+    .delete(tripsController.tripsDeleteOne);
 
 module.exports = router;
